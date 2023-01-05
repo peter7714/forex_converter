@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/app.css">
+    <title>Forex Converter</title>
+</head>
+<body>
+    <h1>Forex Converter</h1>
+    <hr>
+    <div id="msg">
+        {% block msg %}
+        {% endblock %}
+    </div>
+    <div id="container">
+        <form action="/forex" method="POST">
+            <div>
+                <label for="convert-from">Converting From:</label>
+            </div>
+            <div>
+                <input type="text" name="convert-from" placeholder="USD">
+            </div>
+            <div>
+                <label for="convert-to">Converting To:</label>
+            </div>
+            <div>
+                <input type="text" name="convert-to" placeholder="EUR">
+            </div> 
+            <div>
+                <label for="amount">Amount:</label>
+            </div>
+            <div>
+                <input type="text" name="amount" placeholder="100">
+            </div>
+            <button>Convert</button>
+        </form>
+    </div>
+    <section>
+        {% block content %}
+        {% endblock %}
+    </section>
+</body>
+</html>

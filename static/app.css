@@ -1,0 +1,40 @@
+body {
+    font-family: nunito sans;
+    background-color: #292929;
+    color: #efefef;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#conversion {
+    text-align: center;
+    font-size: 40px;
+}
+
+#msg {
+    text-align: center;
+    text-transform: uppercase;
+    color: #a80b00;
+    font-size: 30px;
+}
+
+div {
+    margin: 5px;
+}
+
+button {
+    margin: 10px;
+    font-size: 20px;
+    padding: 8px;
+    background-color: #0f8bff;
+    border-radius: 5px;
+    border: none;
+    color: #efefef;
+}
